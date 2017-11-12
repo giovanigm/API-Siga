@@ -1,0 +1,22 @@
+{
+  "name": "api_siga",
+  "version": "1.0.0",
+  "description": "Api para app SIGA",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "siga",
+    "fatec",
+    "api"
+  ],
+  "author": "Giovani Granero",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "morgan": "^1.9.0"
+  }
+}
