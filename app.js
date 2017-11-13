@@ -39,7 +39,7 @@ app.use(bodyParser.urlencoded({
 app.use(morgan('dev'));
 
 app.get('/', function(req, res) {
-    res.end('Olá! Você está no WebServer do TCC Siga Mobile!');
+    res.end('Eae! Voce ta no WebServer do TCC Siga Mobile!');
 });
 
 app.set('tokenKey', config.tokenKey);
