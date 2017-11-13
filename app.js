@@ -178,10 +178,10 @@ apiRoutes.post('/alunos/:rg/disciplinas', function(req, res) {
     }
 });
 
-apiRoutes.post('/disciplinas/:codigo/apresentacao', function(req, res) {
-    const apresentacao = listaApresentacoes[req.params.codigo];
-    if(apresentacao) {
-        res.json({ apresentacao: apresentacao, success: true });
+apiRoutes.post('/disciplinas/:codigo', function(req, res) {
+    const disciplina = listaApresentacoes[req.params.codigo];
+    if(disciplina) {
+        res.json({ disciplina: disciplina, success: true });
     } else {
         return res.status(403).send({ 
             success: false, 
