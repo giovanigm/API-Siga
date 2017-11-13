@@ -1,3 +1,14 @@
+/*
+    Perfis dos alunos
+
+    sendo rg: { dados }
+
+    urlFoto é o link da foto, ficará armazenada no drive
+
+    os dados são fake
+
+*/
+
 module.exports = {
     '489758241': {
         nome: 'Joselito da Silva',

@@ -12,9 +12,19 @@ var apiRoutes = express.Router();
 
 var config = require('./config');
 
-var alunos = require('./dados/alunos');
-var senhas = require('./dados/senhas');
-
+var listaAlunos = require('./dados/alunos');
+var listaSenhas = require('./dados/senhas');
+var listaProvas = require('./dados/provas');
+var listaAvisos = require('./dados/avisos');
+var listaDisciplinas = require('./dados/disciplinas');
+var listaNotas = require('./dados/notas');
+var listaHistoricos = require('./dados/historico');
+var listaHorarios = require('./dados/horario');
+var listaBibliografias = require('./dados/bibliografias');
+var listaApresentacoes = require('./dados/apresentacoes');
+var listaAvaliacoes = require('./dados/avaliacoes');
+var listaMateriais = require('./dados/materiais');
+var listaAulas = require('./dados/aulas');
 
 app.listen(3000);
 
@@ -37,12 +47,12 @@ apiRoutes.post('/alunos/login', function(req, res) {
     var rgLogin = req.body.login;
     var senhaLogin = req.body.senha;
     
-    var rgsAlunos = Object.keys(alunos);
+    var rgsAlunos = Object.keys(listaAlunos);
 
     var indiceAluno = rgsAlunos.indexOf(rgLogin);
 
     if(indiceAluno >= 0) {
-        var senha = senhas[rgLogin];
+        var senha = listaSenhas[rgLogin];
         if(senha === senhaLogin) {
             const payload = {
                 admin: true,
@@ -82,13 +92,20 @@ apiRoutes.use(function(req, res, next) {
     }
 });
 
-apiRoutes.post('/alunos/:rg/notas', function(req, res) {
-    res.json({ success: true });
+apiRoutes.post('/alunos/:rg', function(req, res) {
+    const aluno = listaAlunos[req.params.rg];
+    if(aluno) {
+        res.json({ aluno: aluno, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Aluno não encontrado' 
+        });
+    }
 });
 
-apiRoutes.post('/alunos/:rg', function(req, res) {
-    const aluno = alunos[req.params.rg];
-    res.json({ aluno: aluno, success: true });
+apiRoutes.post('/alunos/:rg/notas', function(req, res) {
+    res.json({ success: true });
 });
 
 apiRoutes.post('/alunos/:rg/horario', function(req, res) {
@@ -100,11 +117,87 @@ apiRoutes.post('/alunos/:rg/provas', function(req, res) {
 });
 
 apiRoutes.post('/alunos/:rg/historico', function(req, res) {
-    res.json({ success: true });
+    const historico = listaHistoricos[req.params.rg];
+    if(historico) {
+        res.json({ historico: historico, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Aluno não encontrado' 
+        });
+    }
 });
 
 apiRoutes.post('/alunos/:rg/disciplinas', function(req, res) {
-    res.json({ success: true });
+    const disciplinas = listaDisciplinas[req.params.rg];
+    if(disciplinas) {
+        res.json({ disciplinas: disciplinas, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Aluno não encontrado' 
+        });
+    }
+});
+
+apiRoutes.post('/disciplinas/:codigo/apresentacao', function(req, res) {
+    const apresentacao = listaApresentacoes[req.params.codigo];
+    if(apresentacao) {
+        res.json({ apresentacao: apresentacao, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Disciplina não encontrada' 
+        });
+    }
+});
+
+apiRoutes.post('/disciplinas/:codigo/bibliografia', function(req, res) {
+    const bibliografia = listaBibliografias[req.params.codigo];
+    if(bibliografia) {
+        res.json({ bibliografia: bibliografia, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Disciplina não encontrada' 
+        });
+    }
+});
+
+apiRoutes.post('/disciplinas/:codigo/avaliacoes', function(req, res) {
+    const avaliacoes = listaAvaliacoes[req.params.codigo];
+    if(avaliacoes) {
+        res.json({ avaliacoes: avaliacoes, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Disciplina não encontrada' 
+        });
+    }
+});
+
+apiRoutes.post('/disciplinas/:codigo/materiais', function(req, res) {
+    const materiais = listaMateriais[req.params.codigo];
+    if(materiais) {
+        res.json({ materiais: materiais, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Disciplina não encontrada' 
+        });
+    }
+});
+
+apiRoutes.post('/disciplinas/:codigo/aulas', function(req, res) {
+    const aulas = listaAulas[req.params.codigo];
+    if(aulas) {
+        res.json({ aulas: aulas, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Disciplina não encontrada' 
+        });
+    }
 });
 
 app.use('/api', apiRoutes);
