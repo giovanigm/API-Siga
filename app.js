@@ -12,6 +12,8 @@ var apiRoutes = express.Router();
 
 var config = require('./config');
 
+var port = process.env.PORT || 3000;
+
 var listaAlunos = require('./dados/alunos');
 var listaSenhas = require('./dados/senhas');
 var listaProvas = require('./dados/provas');
@@ -26,7 +28,7 @@ var listaAvaliacoes = require('./dados/avaliacoes');
 var listaMateriais = require('./dados/materiais');
 var listaAulas = require('./dados/aulas');
 
-app.listen(3000);
+app.listen(port);
 
 app.use(bodyParser.json());
 
