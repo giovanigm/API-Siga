@@ -94,6 +94,18 @@ apiRoutes.use(function(req, res, next) {
     }
 });
 
+apiRoutes.post('/avisos', function(req, res) {
+    const avisos = listaAvisos;
+    if(avisos) {
+        res.json({ avisos: avisos, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Aluno não encontrado' 
+        });
+    }
+});
+
 apiRoutes.post('/alunos/:rg', function(req, res) {
     const aluno = listaAlunos[req.params.rg];
     if(aluno) {
@@ -107,15 +119,39 @@ apiRoutes.post('/alunos/:rg', function(req, res) {
 });
 
 apiRoutes.post('/alunos/:rg/notas', function(req, res) {
-    res.json({ success: true });
+    const notas = listaNotas[req.params.rg];
+    if(notas) {
+        res.json({ notas: notas, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Aluno não encontrado' 
+        });
+    }
 });
 
 apiRoutes.post('/alunos/:rg/horario', function(req, res) {
-    res.json({ success: true });
+    const horario = listaHorarios[req.params.rg];
+    if(horario) {
+        res.json({ horario: horario, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Aluno não encontrado' 
+        });
+    }
 });
 
 apiRoutes.post('/alunos/:rg/provas', function(req, res) {
-    res.json({ success: true });
+    const provas = listaProvas[req.params.rg];
+    if(provas) {
+        res.json({ provas: provas, success: true });
+    } else {
+        return res.status(403).send({ 
+            success: false, 
+            message: 'Aluno não encontrado' 
+        });
+    }
 });
 
 apiRoutes.post('/alunos/:rg/historico', function(req, res) {
