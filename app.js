@@ -78,12 +78,12 @@ apiRoutes.post('/alunos/login', function(req, res) {
         if (err) throw err;
 
         if (!usuario) {
-            res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
+            return res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
         } else if (usuario) {
 
             // check if senha matches
             if (usuario.senha != req.body.senha) {
-                res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
+                return res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
             } else {
 
                 // if usuario is found and senha is right
@@ -104,7 +104,7 @@ apiRoutes.post('/alunos/login', function(req, res) {
                 });
 
                 // return the information including token as JSON
-                res.json({
+                return res.json({
                     success: true,
                     message: 'Usuário autenticado com sucesso!',
                     token: token
