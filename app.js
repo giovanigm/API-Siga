@@ -69,27 +69,33 @@ app.get('/setup', function(req, res) {
     });
 });
 
+app.use(function(req,res,next){
+    var _send = res.send;
+    var sent = false;
+    res.send = function(data){
+        if(sent) return;
+        _send.bind(res)(data);
+        sent = true;
+    };
+    next();
+});
 
-apiRoutes.post('/alunos/login', function(req, res, next) {
+
+apiRoutes.post('/alunos/login', function(req, res) {
     // find the usuario
     Usuario.findOne({
         usuario: req.body.usuario
     }, function(err, usuario) {
 
-        if (err) {
-            throw err;
-            next();
-        }
+        if (err) throw err;
 
         if (!usuario) {
             res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
-            next();
         } else if (usuario) {
 
             // check if senha matches
             if (usuario.senha != req.body.senha) {
                 res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
-                next();
             } else {
 
                 // if usuario is found and senha is right
@@ -115,7 +121,6 @@ apiRoutes.post('/alunos/login', function(req, res, next) {
                     message: 'Usuário autenticado com sucesso!',
                     token: token
                 });
-                next();
             }
         }
 
