@@ -32,6 +32,8 @@ var listaAvaliacoes = require('./dados/avaliacoes');
 var listaMateriais = require('./dados/materiais');
 var listaAulas = require('./dados/aulas');
 
+mongoose.connect(config.database);
+
 app.listen(port);
 
 app.use(bodyParser.json());
