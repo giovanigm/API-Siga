@@ -8,11 +8,15 @@ var morgan = require('morgan');
 
 var jwt    = require('jsonwebtoken');
 
+var mongoose    = require('mongoose');
+
 var apiRoutes = express.Router(); 
 
 var config = require('./config');
 
 var port = process.env.PORT || 3000;
+
+var Usuario = require('./models/usuario');
 
 var listaAlunos = require('./dados/alunos');
 var listaSenhas = require('./dados/senhas');
@@ -44,31 +48,70 @@ app.get('/', function(req, res) {
 
 app.set('tokenKey', config.tokenKey);
 
+app.get('/setup', function(req, res) {
 
-apiRoutes.post('/alunos/login', function(req, res) {
-    var rgLogin = req.body.login;
-    var senhaLogin = req.body.senha;
-    
-    var rgsAlunos = Object.keys(listaAlunos);
+    // create a sample usuario
+    var nick = new Usuario({ 
+        usuario: '123456789', 
+        senha: '123456789',
+        token: '', 
+    });
 
-    var indiceAluno = rgsAlunos.indexOf(rgLogin);
+    // save the sample usuario
+    nick.save(function(err) {
+        if (err) throw err;
 
-    if(indiceAluno >= 0) {
-        var senha = listaSenhas[rgLogin];
-        if(senha === senhaLogin) {
-            const payload = {
-                admin: true,
-            };
-            var token = jwt.sign(payload, app.get('tokenKey'));
-            res.json({ success: true, token: token });
-        } else {
-            res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
-        }
-    } else {
-        res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
-    }
+        console.log('Usuário salvo com sucesso');
+        res.json({ success: true });
+    });
 });
 
+
+apiRoutes.post('/alunos/login', function(req, res) {
+    // find the usuario
+    Usuario.findOne({
+        login: req.body.login
+    }, function(err, usuario) {
+
+        if (err) throw err;
+
+        if (!usuario) {
+            res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
+        } else if (usuario) {
+
+            // check if senha matches
+            if (usuario.senha != req.body.senha) {
+                res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
+            } else {
+
+                // if usuario is found and senha is right
+                // create a token with only our given payload
+                // we don't want to pass in the entire usuario since that has the senha
+                var date = new Date();
+                var time = date.getTime();
+                const payload = {
+                    key: time,
+                };
+                var token = jwt.sign(payload, app.get('tokenKey'));
+
+                Usuario.findOneAndUpdate(
+                    { login: usuario.login },
+                    { $set: { token: token } }, 
+                function(err) {
+                    return res.json({ succes: false, message: 'Algo deu errado.' });
+                });
+
+                // return the information including token as JSON
+                res.json({
+                    success: true,
+                    message: 'Usuário autenticado com sucesso!',
+                    token: token
+                });
+            }
+        }
+
+    });
+});
 
 apiRoutes.use(function(req, res, next) {
     
@@ -92,6 +135,37 @@ apiRoutes.use(function(req, res, next) {
         });
 
     }
+});
+
+apiRoutes.post('/alunos/logout', function(req, res) {
+    Usuario.findOne({
+        login: req.body.login
+    }, function(err, usuario) {
+
+        if (err) throw err;
+
+        if (!usuario) {
+            res.json({ success: false, message: 'Logout falhou. Usuário inválido.' });
+        } else if (usuario) {
+            // if usuario is found and senha is right
+            // create a token with only our given payload
+            // we don't want to pass in the entire usuario since that has the senha
+           
+            Usuario.findOneAndUpdate(
+                { login: usuario.login },
+                { $set: { token: '' } }, 
+            function(err) {
+                return res.json({ succes: false, message: 'Algo deu errado.' });
+            });
+
+            // return the information including token as JSON
+            res.json({
+                success: true,
+                message: 'Usuário deslogado com sucesso!',
+            });
+        }
+
+    });
 });
 
 apiRoutes.post('/avisos', function(req, res) {
