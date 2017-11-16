@@ -72,7 +72,7 @@ app.get('/setup', function(req, res) {
 apiRoutes.post('/alunos/login', function(req, res) {
     // find the usuario
     Usuario.findOne({
-        login: req.body.login
+        usuario: req.body.usuario
     }, function(err, usuario) {
 
         if (err) throw err;
