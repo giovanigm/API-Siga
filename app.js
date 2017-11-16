@@ -53,11 +53,11 @@ app.set('tokenKey', config.tokenKey);
 app.get('/setup', function(req, res) {
 
     // create a sample usuario
-    var nick = new Usuario({ 
-        usuario: '123456789', 
-        senha: '123456789',
-        token: '', 
-    });
+    var nick = new Usuario();
+
+    nick.usuario = '123456789';
+    nick.senha = '123456789';
+    nick.token = '';
 
     // save the sample usuario
     nick.save(function(err) {
