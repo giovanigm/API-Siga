@@ -49,12 +49,6 @@ app.get('/', function(req, res) {
 });
 
 app.set('tokenKey', config.tokenKey);
-
-
-app.use(function (req, res, next) {
-    console.log('Time:', Date.now());
-    next();
-});
   
 
 app.get('/setup', function(req, res) {
@@ -76,21 +70,26 @@ app.get('/setup', function(req, res) {
 });
 
 
-apiRoutes.post('/alunos/login', function(req, res) {
+apiRoutes.post('/alunos/login', function(req, res, next) {
     // find the usuario
     Usuario.findOne({
         usuario: req.body.usuario
     }, function(err, usuario) {
 
-        if (err) throw err;
+        if (err) {
+            throw err;
+            next();
+        }
 
         if (!usuario) {
             res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
+            next();
         } else if (usuario) {
 
             // check if senha matches
             if (usuario.senha != req.body.senha) {
                 res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
+                next();
             } else {
 
                 // if usuario is found and senha is right
@@ -116,6 +115,7 @@ apiRoutes.post('/alunos/login', function(req, res) {
                     message: 'Usuário autenticado com sucesso!',
                     token: token
                 });
+                next();
             }
         }
 
