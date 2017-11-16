@@ -50,6 +50,13 @@ app.get('/', function(req, res) {
 
 app.set('tokenKey', config.tokenKey);
 
+
+app.use(function (req, res, next) {
+    console.log('Time:', Date.now());
+    next();
+});
+  
+
 app.get('/setup', function(req, res) {
 
     // create a sample usuario
@@ -78,12 +85,12 @@ apiRoutes.post('/alunos/login', function(req, res) {
         if (err) throw err;
 
         if (!usuario) {
-            return res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
+            res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
         } else if (usuario) {
 
             // check if senha matches
             if (usuario.senha != req.body.senha) {
-                return res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
+                res.json({ success: false, message: 'Autenticação falhou. Usuário ou senha inválidos.' });
             } else {
 
                 // if usuario is found and senha is right
@@ -104,7 +111,7 @@ apiRoutes.post('/alunos/login', function(req, res) {
                 });
 
                 // return the information including token as JSON
-                return res.json({
+                res.json({
                     success: true,
                     message: 'Usuário autenticado com sucesso!',
                     token: token
