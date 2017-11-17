@@ -59,6 +59,7 @@ app.get('/setup', function(req, res) {
     nick.usuario = '123456789';
     nick.senha = '123456789';
     nick.token = '';
+    nick.admin = true;
 
     // save the sample usuario
     nick.save(function(err) {
@@ -104,9 +105,9 @@ apiRoutes.post('/alunos/login', function(req, res) {
                 var date = new Date();
                 var time = date.getTime();
                 const payload = {
-                    key: time,
+                    admin: usuario.admin,
                 };
-                var token = jwt.sign(payload, app.get('tokenKey'));
+                var token = jwt.sign(payload, app.get('tokenKey' + time));
 
                 Usuario.findOneAndUpdate(
                     { login: usuario.login },
