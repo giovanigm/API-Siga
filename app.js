@@ -107,7 +107,7 @@ apiRoutes.post('/alunos/login', function(req, res) {
                 const payload = {
                     admin: usuario.admin,
                 };
-                var token = jwt.sign(payload, app.get('tokenKey' + time));
+                var token = jwt.sign(payload, app.get('tokenKey') + time);
 
                 Usuario.findOneAndUpdate(
                     { login: usuario.login },
