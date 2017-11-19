@@ -68,4 +68,38 @@ module.exports = {
             nome: 'Programação em Microinformática',
         },
     ],
+    '367107557': [
+        {
+            codigo: 'AGR101',
+            nome: 'Gestão de Equipes',
+        },
+        {
+            codigo: 'HST002',
+            nome: 'Sociedade e Tecnologia',
+        },
+        {
+            codigo: 'IIA002',
+            nome: 'Inteligência Artificial',
+        },
+        {
+            codigo: 'ITI004',
+            nome: 'Gestão e Governança e Tecnologia da Informação',
+        },
+        {
+            codigo: 'MMD001',
+            nome: 'Matemática Discreta',
+        },
+        {
+            codigo: 'LIN600',
+            nome: 'Inglês VI',
+        },
+        {
+            codigo: 'TES001',
+            nome: 'Estágio Supervisionado',
+        },
+        {
+            codigo: 'TTG103',
+            nome: 'Trabalho de Gradução II',
+        },
+    ],
 };

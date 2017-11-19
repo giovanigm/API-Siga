@@ -60,7 +60,109 @@ module.exports = {
                 codigo: 'N3',
                 nome: 'Substitutiva da P1',
                 descricao: 'Avaliação do aprendizado',
-            }
+            },
+        ],
+    },
+    'HST002': {
+        //Sociedade e Tecnologia
+        formula: 'max(((N1+N2)/2)',
+        observacoes: 'Média final = (N1 + N2)/2 >= 6,0 (Média < 6,0 aluno reprovado); Não haverá exame ou prova substitutiva.',
+        avaliacoes: [
+            {
+                codigo: 'N1',
+                nome: 'Avaliação P1',
+                descricao: 'Avaliar conceitos primeira parte semestre',
+            },
+            {
+                codigo: 'N2',
+                nome: 'Avaliação P2',
+                descricao: 'Avaliar a aplicação dos conceitos do semestre em um trabalho final, mais trabalhos parciais.',
+            },
+        ],
+    },
+    'AGR101': {
+        //Gestão de Equipes
+        formula: '(P1+P2)/2',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: 'N1',
+                nome: 'Avaliação P1',
+                descricao: 'Mensurar o conhecimento dos estudantes',
+            },
+            {
+                codigo: 'N2',
+                nome: 'Avaliação P2',
+                descricao: 'Mensurar o conhecimento dos alunos',
+            },
+        ],
+    },
+    'MMD001': {
+        //Matematica Discreta
+        formula: '(P1+P2)/2',
+        observacoes: 'P1: Prova (9) + Atividades (1) P2: Prova (9) + Atividades (1)',
+        avaliacoes: [
+            {
+                codigo: 'N1',
+                nome: 'Avaliação P1',
+                descricao: '',
+            },
+            {
+                codigo: 'N2',
+                nome: 'Avaliação P2',
+                descricao: '',
+            },
+        ],
+    },
+    'LIN600': {
+        //Ingles GTI
+        formula: '(P1+P2)/2',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: 'N1',
+                nome: 'Avaliação P1',
+                descricao: '',
+            },
+            {
+                codigo: 'N2',
+                nome: 'Avaliação P2',
+                descricao: '',
+            },
+        ],
+    },
+    'IED001': {
+        //Estrutura de Dados
+        formula: '((0.3*T1+0.7*P1) + (0.3*T2+0.7*P2))/2',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: 'N1',
+                nome: 'Avaliação P1',
+                descricao: 'T1	Trabalho 1, P1 Prova 1',
+            },
+            {
+                codigo: 'N2',
+                nome: 'Avaliação P2',
+                descricao: 'T2 Trabalho 2, P2 Prova 2',
+            },
+        ],
+    },
+    'ILP010': {
+        //LP
+        formula: 'max(((N1+N2)/2),(min(6,max(((N1+N3)/2),((N2+N3)/2)))))',
+        observacoes: 'Caso o aluno não atinja a média final igual ou superior a 6,0 ele poderá fazer a prova P3, a nota N3 substituirá a menor nota N1 ou N2, caso seja maior. Caso o aluno faça a P3, sua nota máxima será 6,0.',
+        avaliacoes: [
+            {
+                codigo: 'N1',
+                nome: 'Avaliação P1',
+                descricao: 'Avaliação de todo o conteúdo no bimestre.',
+            },
+            {
+                codigo: 'N2',
+                nome: 'Avaliação P2',
+                descricao: '',
+            },
         ]
     }
 };
