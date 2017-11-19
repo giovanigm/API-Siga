@@ -15,19 +15,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Ética e Responsabilidade Profissional',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Ética e Responsabilidade Profissional',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Inglês VI',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Inglês VI',
                 },
             ],
         },
@@ -36,19 +36,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Inteligência Artificial',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Inteligência Artificial',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Inteligência Artificial',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Inteligência Artificial',
                 },
             ],
         },
@@ -57,19 +57,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Gestão e Governança de Tecnologia da Informação',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Gestão e Governança de Tecnologia da Informação',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Gestão e Governança de Tecnologia da Informação',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Gestão e Governança de Tecnologia da Informação',
                 },
             ],
         },
@@ -78,19 +78,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Estágio Supervisionado',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Estágio Supervisionado',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Trabalho de Graduação II',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Trabalho de Graduação II',
                 },
             ],
         },
@@ -99,19 +99,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Inglês VI',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Inglês VI',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Ética e Responsabilidade Profissional',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Ética e Responsabilidade Profissional',
                 },
             ],
         },
@@ -122,19 +122,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Administração Geral',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Administração Geral',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Comunicação e Expressão',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Comunicação e Expressão',
                 },
             ],
         },
@@ -143,19 +143,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Arquitetura e Organização de Computadores',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Arquitetura e Organização de Computadores',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Arquitetura e Organização de Computadores',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Arquitetura e Organização de Computadores',
                 },
             ],
         },
@@ -164,19 +164,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Algoritmos e Lógica de Programação',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Algoritmos e Lógica de Programação',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Algoritmos e Lógica de Programação',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Algoritmos e Lógica de Programação',
                 },
             ],
         },
@@ -185,19 +185,19 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Inglês I',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Inglês I',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Programação em Microinformática',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Programação em Microinformática',
                 },
             ],
         },
@@ -206,19 +206,233 @@ module.exports = {
             horarios: [
                 {
                     hora: '19:00',
-                    disciplina: 'Administração Geral das Empresas',
+                    disciplina: 'Sistemas de Informação',
                 },
                 {
                     hora: '19:50',
-                    disciplina: 'Sistemas Operacionais I',
+                    disciplina: 'Sistemas de Informação',
                 },
                 {
                     hora: '20:50',
-                    disciplina: 'Linguagem de Programação IV',
+                    disciplina: 'Matemática Discreta',
                 },
                 {
                     hora: '21:40',
-                    disciplina: 'Ética e Responsabilidade Social',
+                    disciplina: 'Matemática Discreta',
+                },
+            ],
+        },
+    ],
+    '367107557': [
+        {
+            dia: 'Segunda-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: 'Gestão de Equipes',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: 'Gestão de Equipes',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: 'Inglês VI',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: 'Inglês VI',
+                },
+            ],
+        },
+        {
+            dia: 'Terça-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: 'Inteligência Artificial',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: 'Inteligência Artificial',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: 'Inteligência Artificial',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: 'Inteligência Artificial',
+                },
+            ],
+        },
+        {
+            dia: 'Quarta-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: 'Gestão de Governança e Tecnologia da Informação',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: 'Gestão de Governança e Tecnologia da Informação',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: 'Gestão de Governança e Tecnologia da Informação',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: 'Gestão de Governança e Tecnologia da Informação',
+                },
+            ],
+        },
+        {
+            dia: 'Quinta-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: 'Estágio Supervisionado',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: 'Estágio Supervisionado',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: 'Trabalho de Graduação II',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: 'Trabalho de Graduação II',
+                },
+            ],
+        },
+        {
+            dia: 'Sexta-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: 'Sociedade e Tecnologia',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: 'Sociedade e Tecnologia',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: 'Matemática Discreta',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: 'Matemática Discreta',
+                },
+            ],
+        },
+    ]
+     '443605129': [
+        {
+            dia: 'Segunda-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: 'Linguagem de Programação',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: 'Linguagem de Programação',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: 'Linguagem de Programação',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: 'Linguagem de Programação',
+                },
+            ],
+        },
+        {
+            dia: 'Terça-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: '',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: '',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: '',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: '',
+                },
+            ],
+        },
+        {
+            dia: 'Quarta-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: '',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: '',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: '',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: '',
+                },
+            ],
+        },
+        {
+            dia: 'Quinta-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: 'Estrutura de Dados',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: 'Estrutura de Dados',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: 'Estrutura de Dados',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: 'Estrutura de Dados',
+                },
+            ],
+        },
+        {
+            dia: 'Sexta-Feira',
+            horarios: [
+                {
+                    hora: '19:00',
+                    disciplina: '',
+                },
+                {
+                    hora: '19:50',
+                    disciplina: '',
+                },
+                {
+                    hora: '20:50',
+                    disciplina: '',
+                },
+                {
+                    hora: '21:40',
+                    disciplina: '',
                 },
             ],
         },
