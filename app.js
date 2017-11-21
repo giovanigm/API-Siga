@@ -118,9 +118,12 @@ apiRoutes.post('/alunos/login', function(req, res) {
 
                 // return the information including token as JSON
                 res.json({
+                    dadosUsuario: {
+                        usuario: usuario.login,
+                        token,
+                    },
                     success: true,
                     message: 'Usuário autenticado com sucesso!',
-                    token: token
                 });
             }
         }
