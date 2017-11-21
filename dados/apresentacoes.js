@@ -9,6 +9,23 @@
 
 */
 
+/*
+'ISI002': {
+        titulo: '',
+        apresentacao: '',
+        area: '',
+        ementa: '',
+        objetivo: '',
+        cargas: {
+            semanais: 0,
+            teoricas: 0,
+            praticas: 0,
+            totais: 0,
+        }
+    },
+*/
+
+
 module.exports = {
     'HSO003': {
         titulo: 'Ética e Responsabilidade Profissional',
@@ -131,6 +148,84 @@ module.exports = {
             teoricas: 14,
             praticas: 14,
             totais: 28,
+        }
+    },
+    'AAG001': {
+        titulo: 'Administração Geral',
+        apresentacao: 'Apresentação e análise do programa.\n2.	Organizações.\n3.	Perfil do Administrador.\n4.	Contextualização histórica da Administração.\n5.	Teorias\n5.1.	Abordagem Clássica: \n5.1.1.	Teoria Científica – Taylor;\n5.1.2.	Teoria Clássica – Fayol.\n5.2.	Teoria das Relações Humanas – Mayo;\n5.3.	Teoria Burocrática – Weber;\n5.4.	Teoria Comportamental – Maslow, Herzberg e McGregor.\n6.	Ambiente e contingência.\n7.	Perspectivas futuras.\n8.	Novos conceitos de Administração e a nova economia, excelência e ferramentas.',
+        area: 'Humanas',
+        ementa: 'Histórico da teoria geral da administração e abordagens básicas do pensamento administrativo.  Conceito de Administração e funções administrativas. Processos Gerenciais, estratégia empresarial.',
+        objetivo: 'Compreender e identificar a evolução da administração, estruturas e funções organizacionais.',
+        cargas: {
+            semanais: 4,
+            teoricas: 28,
+            praticas: 0,
+            totais: 28,
+        }
+    },
+    'IAC001': {
+        titulo: 'Arquitetura e Organização de Computadores',
+        apresentacao: 'Bases numéricas e codificação de dados. Introdução à lógica digital.\nConceitos Básicos de Arquitetura Computacional:\nprimeira, segunda, terceira e quarta geração de computadores, processador, canais, periféricos,\nModo de Endereçamento, Tipo de Dados, Conjunto de Instruções, interrupções. Sistemas paralelos.\nSistemas Operacionais: conceitos e funções. Linguagens e ferramentas. Organização de arquivos. \nBancos de Dados: Conceitos e tipos de organização. Teleprocessamento e Redes: Conceitos',
+        area: 'Logica',
+        ementa: 'Bases numéricas e codificação de dados. Introdução à lógica digital.\nConceitos Básicos de Arquitetura Computacional:\nprimeira, segunda, terceira e quarta geração de computadores, processador, canais, periféricos,\nModo de Endereçamento, Tipo de Dados, Conjunto de Instruções, interrupções. Sistemas paralelos.\nSistemas Operacionais: conceitos e funções. Linguagens e ferramentas. Organização de arquivos. \nBancos de Dados: Conceitos e tipos de organização. Teleprocessamento e Redes: Conceitos',
+        objetivo: 'Compreender e Aplicar como funciona a arquitetura e a organizacao de computadores',
+        cargas: {
+            semanais: 4,
+            teoricas: 14,
+            praticas: 14,
+            totais: 28,
+        }
+    },
+    'IAL002': {
+        titulo: 'Algoritmos e Lógica de Programação',
+        apresentacao: 'Introdução nos fluxogramas e na linguagem java',
+        area: 'Lógica',
+        ementa: 'algoritmos, Estrutura dos algoritmos. Fluxogramas. Linguagem Java.',
+        objetivo: 'Compreender e Aplicar Funções basicas da programação',
+        cargas: {
+            semanais: 4,
+            teoricas: 14,
+            praticas: 14,
+            totais: 28,
+        }
+    },
+    'ILM001': {
+        titulo: 'Programação em Microinformática',
+        apresentacao: 'mostra como funciona o word e excel ',
+        area: 'Lógica',
+        ementa: 'Introdução a Informática. Conceitos básicos.\nProcessador de Textos. Formatações básicas.\nProcessador de Texto – trabalho com formatação ABNT.\nProcessador de Texto – tabelas, estilos, configuração de páginas, índices. Internet.',
+        objetivo: 'Apresentar conceitos basicos sobre o word e excel',
+        cargas: {
+            semanais: 2,
+            teoricas: 7,
+            praticas: 7,
+            totais: 14,
+        }
+    },
+    'ISI002': {
+        titulo: 'Sistemas de Informação',
+        apresentacao: 'É a ciência que estuda o tratamento automático e racional da informação.',
+        area: 'Humanas',
+        ementa: '',
+        objetivo: 'Apresentar conceitos de Sistemas dentro da Informatica',
+        cargas: {
+            semanais: 4,
+            teoricas: 28,
+            praticas: 0,
+            totais: 28,
+        }
+    },
+    'ISI002': {
+        titulo: 'Comunicação e Expressão',
+        apresentacao: 'Como se comunicar e se expressar na socieda e de forma correta e coerente',
+        area: 'Humanas',
+        ementa: 'Dinâmica de apresentação.\nElementos da comunicação;  Teoria e  leitura.\nHabilidades para a construção de texto\nAnálise e resumo de textos',
+        objetivo: 'Apresentar conceitos sobre a lingua Portuguesa e sua escrita',
+        cargas: {
+            semanais: 0,
+            teoricas: 0,
+            praticas: 0,
+            totais: 0,
         }
     },
 };

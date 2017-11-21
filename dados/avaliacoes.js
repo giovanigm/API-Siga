@@ -9,14 +9,146 @@
 
 */
 
+/*
+'': {
+        formula: '',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: '',
+                nome: '',
+                descricao: '',
+            },
+            {
+                codigo: '',
+                nome: '',
+                descricao: '',
+            },
+        ],
+    },
+
+*/
+
 module.exports = {
+    'LIN100': {
+        formula: '(P1+P2)/2',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: 'P1',
+                nome: 'P1',
+                descricao: '',
+            },
+            {
+                codigo: 'P2',
+                nome: 'P2',
+                descricao: '',
+            },
+        ],
+    },
+    'LPO001': {
+        formula: '(P1 + P2) / 2',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: 'P1',
+                nome: 'Avaliação P1',
+                descricao: '',
+            },
+            {
+                codigo: 'P2',
+                nome: 'Avaliação P2',
+                descricao: '',
+            },
+        ],
+    },
+    'ISI002': {
+        formula: 'max(((N1+N2)/2),(min(6,max(((N1+N3)/2),((N2+N3)/2)))))',
+        observacoes: 'A média final é a média da P1 + P2. Se o aluno não atingir a média, somente em função de nota baixa em P1, fará uma substitutiva e sua nota máxima será 6,0. Nota baixa em P2, não tem substitutiva.',
+        avaliacoes: [
+            {
+                codigo: 'N1',
+                nome: 'Avaliação P1',
+                descricao: 'Avaliar o conteúdo assimilado pelos alunos',
+            },
+            {
+                codigo: 'N2',
+                nome: 'Avaliação P2',
+                descricao: 'Avaliar o aproveitamento dos alunos',
+            },
+        ],
+    },
+    'ILM001': {
+        formula: '(p1+p2)/2',
+        observacoes: 'p1 - média do 1º bimestre p2 - média do 2º bimestre',
+        avaliacoes: [
+            {
+                codigo: 'P1',
+                nome: 'Avaliação Prática',
+                descricao: 'Conhecer e aplicar recursos de programação orientada a eventos para personalizar aplicativos de escritório ( editor de textos, planilhas de cálculos)',
+            },
+            {
+                codigo: 'P2',
+                nome: 'Avaliação Prática',
+                descricao: 'Conhecer e aplicar recursos de programação orientada a eventos para personalizar aplicativos de escritório ( editor de textos, planilhas de cálculos)',
+            },
+        ],
+    },
+    'IAL002': {
+        formula: '(P1+P2)/2',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: 'P1',
+                nome: 'P1',
+                descricao: '',
+            },
+            {
+                codigo: 'P2',
+                nome: 'P2',
+                descricao: '',
+            },
+        ],
+    },
+    'IAC001': {
+        formula: '((P1 + A1) + (P2 + A2)) / 2',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: 'P1',
+                nome: 'Prova 1',
+                descricao: '',
+            },
+            {
+                codigo: 'P2',
+                nome: 'Prova 2',
+                descricao: '',
+            },
+        ],
+    },
+    'AAG001': {
+        formula: '(P1 + P2) / 2',
+        observacoes: '',
+        avaliacoes: [
+            {
+                codigo: 'P1',
+                nome: 'P1 - Prova 1º Bimestre',
+                descricao: '',
+            },
+            {
+                codigo: 'P2',
+                nome: 'P2 - Prova 2º Bimestre',
+                descricao: '',
+            },
+        ],
+    },
     'HSO003': {
         formula: '(P1 + P2) / 2',
         observacoes: '',
         avaliacoes: [
             {
                 codigo: 'P1',
-                nome: '1',
+                nome: 'P1',
                 descricao: '',
             },
             {

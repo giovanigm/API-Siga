@@ -76,4 +76,47 @@ module.exports = {
         '',
         '',
     ],
+    'AAG001': [
+        'MAXIMIANO, A. C. A. Introdução à Administração, SP: Atlas, 2000.',
+        'COELHO, M. A essência da administração – conceitos introdutórios. Saraiva, 2008.',
+        'CAULLIRAUX, H; CLEMENTE, R; PAIM, R. Gestão de Processos: Pensar, Agir e Aprender. Bookman, 2009.',
+        'CERTO, Samuel C. Administração Moderna. Pearson Brasil, 2003.',
+        'MORGAN, Gareth. Imagens da Organização. Atlas, 2007.',
+        'ROBBINS, Stephen P.; DECENZO, David A. Fundamentos de Administração. Pearson, 2004.',
+    ],
+    'IAC001': [
+        'STALLINGS, W. Arquitetura e organização de computadores. 5.ed. Prentice-Hall Brasil, 2008.',
+        'TANENBAUM, A. S. Organização Estruturada de Computadores, 5ª Ed. Prentice Hall, 2007.',
+        'TOCCI, R. J. Sistemas digitais: princípios e aplicações. 10.ed. Pearson Brasil, 2007.',
+    ],
+    'IAL002': [
+        'EVARISTO, J. Aprendendo a programar: programando em Linguagem C (para iniciantes). São Paulo: Book Express, 2001.',
+        'SALVETTI, D. D.; BARBOSA, L. M. Algoritmos. São Paulo: Makron Books, 1998.',
+        'FORBELLONE, A. L. V.; EBERSPACHER, H. F. Lógica de programação: a construção de algoritmos e estruturas de dados. 3. ed. São Paulo: Prentice Hall, 2005.',
+        'PIVA JUNIOR, D. et al. Algoritmos e programação de computadores. 1. ed. São Paulo: Elsevier Academic, 2012.',
+    ],
+    'ILM001': [
+        '',
+        '',
+    ],
+    'ISI002': [
+        'ARLE, Ml e BERTOLA, D. Guia prático de Informática. Cronos, 2008.',
+        'GARCIA, M. Informática aplicada a Negócios. SP: Brasport, 2005.',
+        'MANZANO, A L N. G. Estudo Dirigido de Microsoft Office Excel 2007. Erica, 2007.',
+        'SILVA, M.G. Informática: Terminologias Básicas. Erica, 2007.',
+        'LAUDON, Kenneth C.; Laudon J.P. Sistemas de Informação. 5.ed. Rio de Janeiro: LTC, 2004.',
+        'TURBAN, E; POTTER, R; RAINER JR, R K. Introdução a Sistemas de Informação.Campus, 2007',
+    ],
+    'LPO001': [
+        'MARTINS, D S; ZILBERKNOP. Português Instrumental: de acordo com as atuais normas da ABNT. Atlas, 2009.',
+        'CINTRA; CUNHA. Nova gramática do Português contemporâneo de acordo com a nova ortografia. Lexikon, 2009.',
+        'FERREIRA, Aurélio Buarque de Holanda. Novo Dicionário Aurélio da Língua Portuguesa. Positivo, 2009.',
+        'TEIXEIRA, Leonardo – Comunicação na Empresa – FGV Editora – 1ª Edição – 2006.',
+        'MATOS, Gustavo Gomes – Comunicação Empresarial sem Complicação – Editora Manole – 1ª Edição – 2008.',
+        'SERAFINI, Maria Teresa. Como Escrever Textos. São Paulo. Globo.1993.',
+    ],
+    'LIN100': [
+        '',
+        '',
+    ],
 };

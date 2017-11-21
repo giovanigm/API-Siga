@@ -21,6 +21,98 @@
 */
 
 module.exports = {
+    'LIN100': [
+        {
+            tipoArquivo: 'PDF',
+            nome: 'Ingles',
+            descricao: 'Matéria',
+            link: 'http://google.com',
+        },
+    ],
+    'LPO001': [
+        {
+            tipoArquivo: 'PDF',
+            nome: 'Apostila',
+            descricao: 'TUDO',
+            link: 'http://google.com',
+        },
+    ],
+    'ISI002': [
+        {
+            tipoArquivo: 'PDF',
+            nome: 'arquivo de apoio-1',
+            descricao: 'Definições e conceitos',
+            link: 'http://google.com',
+        },
+        {
+            tipoArquivo: 'PDF',
+            nome: 'arquivo de apoio-1',
+            descricao: 'ERP',
+            link: 'http://google.com',
+        },
+    ],
+    'ILM001': [
+        {
+            tipoArquivo: 'PDF',
+            nome: 'PM - ABNT',
+            descricao: 'PM - ABNT',
+            link: 'http://google.com',
+        },
+        {
+            tipoArquivo: 'DOC',
+            nome: 'Exercícios - Atividade 1',
+            descricao: 'Exercícios - Atividade 1',
+            link: 'http://google.com',
+        },
+    ],
+    'IAL002': [
+        {
+            tipoArquivo: 'PDF',
+            nome: 'Apresentação da disciplina',
+            descricao: 'Comentários sobre o plano de ensino e conteúdo da disciplina.\nO que são algoritmos?\nEstrutura dos algoritmos.\nFluxogramas.\nLinguagem Java.',
+            link: 'http://google.com',
+        },
+    ],
+    'IAC001': [
+        {
+            tipoArquivo: 'PDR',
+            nome: 'Apostila',
+            descricao: 'Parte teórica da disciplina.',
+            link: 'http://google.com',
+        },
+        {
+            tipoArquivo: 'PDF',
+            nome: 'Hardware do PC-Básico.',
+            descricao: 'Leitura complementar: Hardware do PC-Básico.',
+            link: 'http://google.com',
+        },
+        {
+            tipoArquivo: 'PDF',
+            nome: 'Hardware do PC-Avançado.',
+            descricao: 'Leitura Complementar: Hardware do PC-Avançado.',
+            link: 'http://google.com',
+        },
+    ],
+    'AAG001': [
+        {
+            tipoArquivo: 'DOC',
+            nome: '3.1 Estudo de Caso - O Outro Lado da Mesa',
+            descricao: 'Atividade para aplicar os conceitos teóricos sobre o perfil do administrador.',
+            link: 'http://google.com',
+        },
+        {
+            tipoArquivo: 'DOC',
+            nome: '1 Plano de Ensino',
+            descricao: 'Programação da disciplina.',
+            link: 'http://google.com',
+        },
+        {
+            tipoArquivo: 'PDF',
+            nome: '3 Perfil do Administrador',
+            descricao: 'Competências, Habilidades e Papéis do Administrador.',
+            link: 'http://google.com',
+        },
+    ],
     'HSO003': [
         {
             tipoArquivo: 'PDF',
