@@ -329,8 +329,8 @@ module.exports = {
                 },
             ],
         },
-    ]
-     '443605129': [
+    ],
+    '443605129': [
         {
             dia: 'Segunda-Feira',
             horarios: [
